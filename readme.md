@@ -1,4 +1,4 @@
-# Nix without NixOS on arm32v7 / armv7l / Raspberry Pi OS / Raspbian
+## Nix without NixOS on arm32v7 / armv7l / Raspberry Pi OS / Raspbian
 This repo aims to provide a simple way of installing the nix package manager on any armv7l linux system which is not running NixOS
 
 The nix release tarball used in the following guide has been built with docker on an existing armv7l system.
@@ -9,12 +9,15 @@ The Dockerfile is included.
 To  download, unpack and install nix, execute the following command as non-root user:
 
   ```bash
-  mkdir -p /tmp/nix-install && \
+  apt-get update && \
+      apt-get install -y curl xz-utils && \
+      mkdir -p /tmp/nix-install && \
       cd /tmp/nix-install && \
-      curl https://raw.github... | tar x && \
+      curl -L https://github.com/DavHau/nix-on-armv7l/releases/download/2.3.7-armv7l/nix-2.3.7pre0_0000000-armv7l-linux.tar.xz | tar xJ && \
       cd nix-* &&\
-      ./install-multi-user
+      ./install
   ```
+If you prefer a multi user installation replace the last line with `./install-multi-user`.  
 After the installation log out and log in once, to make nix available.
 
 ## Add binary Cache
