@@ -1,4 +1,4 @@
-# thie must be build an an armv7l based machine like a raspberry pi running the Raspberry Pi OS
+# This must be built on an armv7l based machine like a raspberry pi
 # based on debian testing
 FROM debian@sha256:28400e7a767b47a933c2579383577243c22033fd3ebeea20239f9a0943701a35
 RUN apt-get update && apt-get install -y nix git
