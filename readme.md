@@ -31,7 +31,7 @@ echo "extra-substituters = https://thefloweringash-armv7.cachix.org" >> /etc/nix
 ```
 
 We also need to trust the signing keys of this cache.  
-Since we are overwriting the defaults with this setting, we also need to include the signing keys for the official nixos cache.
+Since we are overwriting the defaults with this setting, we also need to include the signing keys for the official nixos cache. Refer here for up-to-date keys (app.cachix.org/cache/thefloweringash-armv7), the example is outdated.
 ```bash
 echo "trusted-public-keys = cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY= thefloweringash-armv7.cachix.org-1:v+5yzBD2odFKeXbmC+OPWVqx4WVoIVO6UXgnSAWFtso=" >> /etc/nix/nix.conf
 ```
