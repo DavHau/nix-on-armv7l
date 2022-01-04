@@ -3,4 +3,4 @@ This repo is deprected. There is no need for it anymore, since armv6/7 artifacts
 
 For example: (outdated by now): https://hydra.nixos.org/build/152902117/download/1/nix-2.4pre20210913_c6fa777-armv7l-linux.tar.xz
 
-Get the latest artifacts from: https://hydra.nixos.org/jobset/nix/master
+Get the latest artifacts from: https://hydra.nixos.org/job/nix/master/binaryTarballCross.x86_64-linux.armv7l-linux
